@@ -1,0 +1,179 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body{
+  background-color: #a8bff0;
+  color: #02021d;
+  font-size: 1.75rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+  border-bottom: solid #eee 0.5rem;
+  height: 35vh;
+  position: relative;
+
+}
+main{
+  display: flex;
+  height: 65vh;
+  justify-content: space-around;
+  align-items: center;
+}
+div{
+  background-color: #eeeeee;
+  width: 12rem;
+  color: #02021d;
+  font-size: 6rem;
+  position: absolute;
+  text-align: center;
+  padding: 3rem 0;
+  border-radius: 50%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+
+}
+.btn{
+  height: 6rem;
+  width: 12rem;
+  color: #02021d;
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+.btn:hover{
+background-color: #02021d;
+color: #eee;
+}
+.left{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 52rem;
+}
+.guess{
+  background-color: #a8bff0;
+  color: #02021d;
+  border: solid #eee 0.5rem;
+  height: 12rem;
+  width: 25rem;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  display: block;
+  text-align: center;
+  border-radius: 1rem;
+}
+.right{
+  width: 52rem;
+}
+.startGuessing{
+  margin-bottom: 8rem;
+  height: 3rem;
+}
+.score{
+  margin-bottom: 2rem;
+}
+.again{
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: 12rem;
+  height: 8rem;
+}
+.between{
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.heading{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+.hidden{
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .heading{
+      text-align: center;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      font-size: 2.5rem;
+      transform: translate(-50%, -50%);
+  }
+  div{
+      background-color: #eeeeee;
+      width: 6rem;
+      color: #02021d;
+      font-size: 3rem;
+      position: absolute;
+      text-align: center;
+      padding: 1.5rem 0;
+      border-radius: 50%;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+  
+  }
+  main{
+      display: flex;
+      height: 65vh;
+      flex-direction: column;
+  }
+  .right{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 52rem;
+}
+.guess{
+  background-color: #a8bff0;
+  color: #02021d;
+  border: solid #eee 0.5rem;
+  height: 10rem;
+  width: 20rem;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+  display: block;
+  text-align: center;
+  border-radius: 1rem;
+}
+.startGuessing{
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  height: 3rem;
+}
+.again{
+  position: absolute;
+  top: 2rem;
+  left: 10rem;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #02021d;
+  color: #eee;
+}
+.check{
+  background-color: #02021d;
+  color: #eee;
+}
+.startGuessing{
+  margin-bottom: 5rem;
+  height: 2rem;
+  text-align: center;
+  margin-left: 1.5px;
+}
+}
